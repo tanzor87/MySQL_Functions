@@ -35,7 +35,6 @@ select second_to_date(123456) as perion;
 */
 
 -- Вариант 1. Начинаем перебор чисел с 1
-drop procedure even;
 
 DELIMITER $$ -- //
 CREATE PROCEDURE even()
@@ -60,7 +59,6 @@ DELIMITER ;
 CALL even();
 
 -- Вариант 2. Начинаем перебор чисел с 3, установив по умолчанию первое четное число равное 2.  
-drop procedure even2;
  
 DELIMITER $$ -- //
 CREATE PROCEDURE even2()
@@ -81,7 +79,6 @@ DELIMITER ;
 CALL even2();
 
 -- Вариант 3. Выводит четные числа до числа n, где n целое положительное число 
-drop procedure even3;
 
 DELIMITER $$ -- //
 CREATE PROCEDURE even3(n int)
